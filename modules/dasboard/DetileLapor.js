@@ -21,7 +21,8 @@ class DetileLapor extends Component{
 
     componentWillMount(){
         // return (<Image style={styles.postDescImage} source={{uri: 'http://sigemas.itsinergi.id/api/storage/get/'+id}} />);
-        var url = 'http://egemas.itsinergi.id/api/storage/get/'+this.props.id_lapor;
+        var url = 'http://rikat.itsinergi.id/api/storage/get/'+this.props.id_lapor;
+        this.setState({uriImage: url});
         // fetch(url)
         //     .then(response=>this.setState({uriImage:response.data}))
         //     .catch(error=>Alert.alert("Error : "+error));
@@ -52,7 +53,7 @@ class DetileLapor extends Component{
         //         </CardItem>
         //     </Card>
         // );
-        var url = 'http://egemas.itsinergi.id/api/storage/get/'+this.props.id_lapor;
+        var url = 'http://rikat.itsinergi.id/api/storage/get/'+this.props.id_lapor;
         return (            
             <View style={ styles.rowBg}>
                 <View style={styles.rowHeaderView}>

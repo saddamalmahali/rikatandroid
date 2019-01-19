@@ -29,7 +29,7 @@ export default class App extends Component {
 
   constructor(props) {
     super(props);
-    axios.defaults.baseURL = 'http://egemas.itsinergi.id';
+    axios.defaults.baseURL = 'http://rikat.itsinergi.id';
   }
 
   render() {

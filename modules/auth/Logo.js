@@ -13,8 +13,8 @@ export default class Logo extends Component{
     render(){
         return (
             <View style={style.container}>
-                <Image source={require('../../images/logo_egemas.png')} style={{width:150, height:180}} />
-                <Text style={style.subtitleLogo}>Selamat Datang di Aplikasi E-GeMas!</Text>
+                <Image source={require('../../images/logo_rikat.png')} style={{width:180, height:130}} />
+                <Text style={style.subtitleLogo}>Selamat Datang di Aplikasi RIKAT</Text>
             </View>
         );
     }

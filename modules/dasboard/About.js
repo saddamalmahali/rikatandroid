@@ -27,7 +27,7 @@ class About extends Component{
             <Container>
                 <View style={styles.profileInfoContainer}>
                     <View style={{ alignSelf: "center" }}>
-                        <Image source={require('../../images/logo_egemas.png')} style={{width: 150, height:180}}/>
+                        <Image source={require('../../images/logo_rikat.png')} style={{width: 180, height:130}}/>
                     </View>
                 </View>
                 <Content style={{backgroundColor: '#fff', padding: 10}}>

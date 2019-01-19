@@ -69,6 +69,16 @@ class News extends Component {
         this._loadData();    
     }
 
+    _makeid(){
+        var text = "";
+        var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    
+        for (var i = 0; i < 5; i++)
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+    
+        return text;
+    }
+
     _loadData(){        
         const {token} = this.props.user;
         const headers = {
@@ -103,11 +113,11 @@ class News extends Component {
                 'Content-Type': 'multipart/form-data',
                 'Accept': 'application/json',
             };
-
+            const namafoto = this._makeid()+'.jpg';
             const files ={ 
                 uri : gambar.uri,
                 type: 'jpg/png',
-                name: 'file1.jpg'                 
+                name: namafoto                 
             };
 
             
